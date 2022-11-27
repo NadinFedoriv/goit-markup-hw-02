@@ -77,7 +77,6 @@ background-color: var(--color-hero);
 
 .hero-title {
 color: var(--color-invert);
-font-family: 'Roboto';
 font-weight: 900;
 font-size: 44px;
 line-height: calc(60/44);
@@ -87,7 +86,7 @@ text-transform: uppercase;
 }
 
 .button {
-font-family: 'Roboto';
+font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height:calc(30/16);
@@ -95,8 +94,13 @@ text-align: center;
 letter-spacing: 0.06em;
 color:var(--color-invert);
 background-color: var(--color-accent);
-border: 1px, solid, var(--color-hero);
+border: 1px, solid, var(--color-accent);
 border-radius: 4px;
+cursor: pointer;
+}
+
+.button:hover, .button:focus {
+background: var(--color-accent);
 }
 
 .visually-hidden {
@@ -202,6 +206,7 @@ color: var(--color-title);
 background: var(--color-button);
 border-radius: 4px;
 border: 1px, solid, var(--color-button);
+cursor: pointer;
 }
  
 .filter-button:hover, .filter-button:focus {
